@@ -78,5 +78,5 @@ def sign_up_check():
 
     return template('check', nafn=nafn, netfang=netfang, userExists=userExists)
 
-
-run(debug=True, reloader=True)
+run(host="0.0.0.0", port=os.environ.get('PORT'))
+#run(debug=True, reloader=True)
